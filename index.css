@@ -57,6 +57,64 @@
   font-weight: 400;
 }
 
+.brand {
+  display: flex;
+  width: 88.9%;
+  margin: auto;
+  margin-top: 5%;
+}
+.brand__desc {
+  width: 54.4%;
+  background: var(--Dark-Primary, #2A254B);
+  padding: 4.7% 0 0 4.7%;
+}
+.brand__icon {
+  width: 40.65%;
+}
+.brand__title {
+  color: var(--White, #FFF);
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 140%;
+  width: 60%;
+  margin-bottom: 5.9%;
+}
+.brand__button {
+  width: 170px;
+  height: 56px;
+  background: rgba(249, 249, 249, 0.15);
+  color: var(--White, #FFF);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 28.15%;
+}
+.brand__text {
+  color: var(--White, #FFF);
+  font-family: Satoshi;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 85%;
+  margin-bottom: 8.7%;
+}
+
+.policy {
+  margin-top: 20%;
+}
+
+@media (max-width: 1280px) {
+  .brand__title {
+    width: 70%;
+  }
+  .brand__text {
+    width: 95%;
+  }
+}
 @media (max-width: 1040px) {
   .nav {
     width: 70%;
@@ -65,6 +123,21 @@
 @media (max-width: 769px) {
   .nav {
     display: none;
+  }
+  .brand {
+    margin: 0;
+    width: 100%;
+  }
+  .brand__icon {
+    display: none;
+  }
+  .brand__desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .brand__button {
+    order: 1;
   }
 }
 @media (max-width: 481px) {

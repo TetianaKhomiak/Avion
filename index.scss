@@ -65,16 +65,104 @@
     }
 }
 
+.brand {
+    display: flex;
+    width: 88.9%;
+    margin: auto;
+    margin-top: 5%;
+
+    &__desc {
+        width: 54.4%;
+        background: var(--Dark-Primary, #2A254B);
+        padding: 4.7% 0 0 4.7%;
+
+    }
+
+    &__icon {
+        width: 40.65%;
+    }
+
+    &__title {
+        color: var(--White, #FFF);
+        font-family: Clash Display;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 140%;
+        width: 60%;
+        margin-bottom: 5.9%;
+    }
+
+    &__button {
+        width: 170px;
+        height: 56px;
+        background: rgba(249, 249, 249, 0.15);
+        color: var(--White, #FFF);
+        font-family: Satoshi;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 28.15%;
+    }
+
+    &__text {
+        color: var(--White, #FFF);
+        font-family: Satoshi;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+        width: 85%;
+        margin-bottom: 8.7%;
+    }
+}
+
+.policy {
+    margin-top: 20%;
+}
+
+@media (max-width:1280px) {
+    .brand {
+        &__title {
+            width: 70%;
+        }
+
+        &__text {
+            width: 95%;
+        }
+    }
+}
+
 @media (max-width:1040px) {
     .nav {
         width: 70%;
     }
+     
 }
 
 @media (max-width:769px) {
     .nav {
         display: none;
     }
+
+    .brand {
+        margin: 0;
+        width: 100%;
+
+        &__icon {
+         display: none;
+        }
+    
+        &__desc {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+           }
+
+        &__button {
+            order: 1;
+        }
+     } 
 }
 
 
