@@ -105,7 +105,7 @@
 
 .policy {
   margin: 6% 0 6% 6%;
-  width: 95%;
+  width: 94%;
 }
 .policy__title {
   color: var(--Dark-Primary, #2A254B);
@@ -137,6 +137,67 @@
   width: 75.5%;
 }
 
+.ceramics {
+  width: 88.9%;
+  margin: auto;
+}
+.ceramics__title {
+  color: #2A254B;
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 13% 0 2.6% 0;
+}
+.ceramics__wrapper {
+  display: flex;
+  gap: 1.7%;
+  color: #2A254B;
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 400;
+}
+.ceramics__block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.ceramics__icon {
+  width: 100%;
+}
+.ceramics__text {
+  color: #2A254B;
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+.ceramics__price {
+  color: var(--Dark-Primary, #2A254B);
+  font-family: Satoshi;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: -15px;
+}
+.ceramics__button {
+  color: #2A254B;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  border: none;
+  background: var(--Light-Grey, #F9F9F9);
+  cursor: pointer;
+  width: 170px;
+  height: 56px;
+  margin: 2.8% 0 9.4% 43.5%;
+}
+
+.products {
+  margin-top: 20%;
+}
+
 @media (max-width: 1280px) {
   .brand__title {
     width: 70%;
@@ -160,6 +221,10 @@
   }
   .policy__text {
     font-size: 14px;
+  }
+  .ceramics__button {
+    width: 140px;
+    height: 45px;
   }
 }
 @media (max-width: 769px) {
@@ -212,6 +277,37 @@
     font-size: 20px;
     width: 84%;
   }
+  .ceramics__title {
+    margin: 26.8% 0 5.5% 0;
+  }
+  .ceramics__wrapper {
+    flex-wrap: wrap;
+    gap: 4%;
+  }
+  .ceramics__block {
+    width: 48%;
+    padding-bottom: 5.77%;
+  }
+  .ceramics__block_1 {
+    order: 3;
+  }
+  .ceramics__block_2 {
+    order: 0;
+  }
+  .ceramics__block_3 {
+    order: 2;
+  }
+  .ceramics__block_4 {
+    order: 1;
+  }
+  .ceramics__icon {
+    width: 98%;
+  }
+  .ceramics__button {
+    width: 98.7%;
+    margin: 0;
+    margin: auto;
+  }
 }
 @media (max-width: 481px) {
   .header {
@@ -253,5 +349,8 @@
   }
   .policy__text {
     font-size: 14px;
+  }
+  .ceramics__title {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=index.css.map */

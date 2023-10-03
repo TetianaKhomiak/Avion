@@ -8,6 +8,13 @@
     src: url(Fonts/Satoshi-Regular.otf);
 }
 
+@mixin font-header {
+    color: #2A254B;
+    font-family: Clash Display;
+    font-size: 32px;
+    font-weight: 400;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -119,7 +126,7 @@
 
 .policy {
     margin: 6% 0 6% 6%;
-    width: 95%;
+    width: 94%;
 
     &__title {
         color: var(--Dark-Primary, #2A254B);
@@ -153,7 +160,66 @@
         line-height: 150%;
         width: 75.5%;
     }
+}
 
+.ceramics {
+    width: 88.9%;
+    margin: auto;
+
+    &__title {
+        @include font-header;
+        margin: 13% 0 2.6% 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 1.7%;
+        @include font-header;  
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;  
+    }
+
+    &__icon {
+        width: 100%;
+    }
+
+    &__text {
+        @include font-header;
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    &__price {
+        color: var(--Dark-Primary, #2A254B);
+        font-family: Satoshi;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+        margin-top: -15px;
+    }
+
+    &__button {
+        color: #2A254B;
+        font-family: Satoshi;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        border: none;
+        background: var(--Light-Grey, #F9F9F9);
+        cursor: pointer;
+        width: 170px;
+        height: 56px;
+        margin: 2.8% 0 9.4% 43.5%;
+    }
+
+}
+
+.products {
+    margin-top: 20%;
 }
 
 @media (max-width:1280px) {
@@ -190,6 +256,13 @@
 
         &__text {
             font-size: 14px;
+        }
+    }
+
+    .ceramics {
+        &__button {
+            width: 140px;
+            height: 45px;
         }
     }
 }
@@ -257,6 +330,49 @@
             width: 84%;
         }
     }
+
+    .ceramics {
+
+        &__title {
+            margin: 26.8% 0 5.5% 0;
+        }
+        
+        &__wrapper {
+            flex-wrap: wrap; 
+            gap: 4%; 
+        }
+
+        &__block {
+            width: 48%;
+            padding-bottom: 5.77%;
+
+            &_1 {
+                order: 3;
+            }
+
+            &_2 {
+                order: 0;
+            }
+            
+            &_3{
+            order: 2;
+            }
+
+            &_4 {
+                order: 1;
+            }
+        }
+
+        &__icon {
+            width: 98% ;
+        }
+    
+        &__button {
+            width: 98.7%;
+            margin: 0;
+            margin: auto;
+        }
+    }
 }
 
 
@@ -317,4 +433,11 @@
             font-size: 14px;
         }
     }
-}
+
+    .ceramics {
+
+        &__title {
+            font-size: 20px;
+        }
+    }
+}    
