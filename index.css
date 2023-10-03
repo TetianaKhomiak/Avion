@@ -104,7 +104,37 @@
 }
 
 .policy {
-  margin-top: 20%;
+  margin: 6% 0 6% 6%;
+  width: 95%;
+}
+.policy__title {
+  color: var(--Dark-Primary, #2A254B);
+  font-family: Clash Display;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  padding-bottom: 5%;
+  width: 30%;
+  margin: auto;
+}
+.policy__wrapper {
+  display: flex;
+}
+.policy__name {
+  color: var(--Dark-Primary, #2A254B);
+  font-family: Clash Display;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 5% 0 3% 0;
+}
+.policy__text {
+  color: var(--Dark-Primary, #2A254B);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 75.5%;
 }
 
 @media (max-width: 1280px) {
@@ -114,10 +144,22 @@
   .brand__text {
     width: 95%;
   }
+  .policy__title {
+    width: 40%;
+  }
 }
 @media (max-width: 1040px) {
   .nav {
     width: 70%;
+  }
+  .policy__title {
+    width: 50%;
+  }
+  .policy__name {
+    font-size: 18px;
+  }
+  .policy__text {
+    font-size: 14px;
   }
 }
 @media (max-width: 769px) {
@@ -136,8 +178,39 @@
     display: flex;
     flex-direction: column;
   }
+  .brand__title {
+    width: 80%;
+    margin-bottom: 22.5%;
+    font-size: 34px;
+  }
+  .brand__text {
+    width: 85%;
+    margin-bottom: 8.95%;
+    font-size: 20px;
+  }
   .brand__button {
     order: 1;
+    margin-bottom: 6.74%;
+    width: 95.7%;
+    font-size: 20px;
+  }
+  .policy__title {
+    width: 70%;
+    margin: 0;
+    padding-bottom: 10.2%;
+    font-size: 28px;
+  }
+  .policy__wrapper {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .policy__name {
+    margin: 4.5% 0 3.4% 0;
+    font-size: 22px;
+  }
+  .policy__text {
+    font-size: 20px;
+    width: 84%;
   }
 }
 @media (max-width: 481px) {
@@ -161,5 +234,24 @@
   }
   .nav {
     display: none;
+  }
+  .brand__title {
+    font-size: 32px;
+  }
+  .brand__text {
+    font-size: 18px;
+  }
+  .brand__button {
+    font-size: 18px;
+  }
+  .policy__title {
+    width: 52%;
+    font-size: 20px;
+  }
+  .policy__name {
+    font-size: 16px;
+  }
+  .policy__text {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=index.css.map */
