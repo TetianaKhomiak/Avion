@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Clash Display;
+  src: url(Fonts/FontsFree-Net-ClashDisplay-Variable.ttf);
+}
+@font-face {
+  font-family: Satoshi;
+  src: url(Fonts/Satoshi-Regular.otf);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: 95%;
+  border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+.header__search {
+  vertical-align: -30%;
+}
+.header__logo {
+  color: #22202E;
+  font-family: Clash Display;
+  font-size: 24px;
+  font-weight: 400;
+}
+.header__cart {
+  margin-left: -40%;
+  text-decoration: none;
+  vertical-align: -30%;
+}
+.header__user {
+  margin-left: 40%;
+  vertical-align: -30%;
+}
+.header__mobile {
+  display: none;
+}
+
+.nav {
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+.nav__link {
+  text-decoration: none;
+  border: none;
+  color: #726E8D;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 1040px) {
+  .nav {
+    width: 70%;
+  }
+}
+@media (max-width: 769px) {
+  .nav {
+    display: none;
+  }
+}
+@media (max-width: 481px) {
+  .header {
+    width: 85%;
+  }
+  .header__icons1 {
+    display: flex;
+    order: 1;
+    align-self: flex-end;
+  }
+  .header__mobile {
+    display: block;
+    margin-left: 50%;
+  }
+  .header__search {
+    margin-left: -50%;
+  }
+  .header__icons2 {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */
