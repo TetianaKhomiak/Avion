@@ -1,6 +1,6 @@
 @font-face {
   font-family: Clash Display;
-  src: url(Fonts/FontsFree-Net-ClashDisplay-Variable.ttf);
+  src: url(Fonts/ClashDisplay-Regular.otf);
 }
 @font-face {
   font-family: Satoshi;
@@ -318,14 +318,29 @@
 }
 .footer__text {
   color: var(--White, #FFF);
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 400;
   text-decoration: none;
 }
+.footer__text_title {
+  color: var(--White, #FFF);
+  font-family: Clash Display;
+  font-size: 16px;
+  font-weight: 400;
+}
 .footer__wrapper {
+  width: 88.6%;
+  margin: auto;
   display: flex;
+  gap: 6.7%;
+  padding: 3.5% 0 3% 0;
 }
 .footer__block {
+  width: 10%;
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 .footer__bottom {
   display: flex;

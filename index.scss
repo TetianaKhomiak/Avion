@@ -1,6 +1,6 @@
 @font-face {
     font-family: Clash Display;
-    src: url(Fonts/FontsFree-Net-ClashDisplay-Variable.ttf);
+    src: url(Fonts/ClashDisplay-Regular.otf);
 }
 
 @font-face {
@@ -14,6 +14,14 @@
     font-size: 32px;
     font-weight: 400;
 }
+
+@mixin font-text {
+    color: var(--White, #FFF);
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 400;
+}
+
 
 * {
     padding: 0;
@@ -344,17 +352,30 @@
     background: var(--Dark-Primary, #2A254B);
 
     &__text {
-        color: var(--White, #FFF);
+        @include font-text;
         text-decoration: none;
+
+        &_title {
+            color: var(--White, #FFF);
+            font-family: Clash Display;
+            font-size: 16px;
+            font-weight: 400;
+        }
     }
 
     &__wrapper {
+        width: 88.6%;
+        margin: auto;
         display: flex;
+        gap: 6.7%;
+        padding: 3.5% 0 3% 0;
     }
 
     &__block {
+        width: 10%;
         display: flex;
         flex-direction: column;
+        gap: 12px;
     }
 
     &__bottom {
@@ -589,7 +610,7 @@
         }
 
         &__icon {
-           display: none; 
+            display: none;
         }
     }
 }
