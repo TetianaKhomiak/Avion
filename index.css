@@ -200,7 +200,7 @@
 .club__wrapper {
   display: flex;
   flex-direction: column;
-  width: 39.5%;
+  width: 70%;
   margin: auto;
   gap: 16px;
 }
@@ -210,6 +210,7 @@
   font-size: 32px;
   font-weight: 400;
   font-size: 36px;
+  font-weight: 400;
   line-height: 140%;
   text-align: center;
 }
@@ -219,20 +220,23 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
-  width: 75%;
+  width: 445px;
   margin: auto;
   text-align: center;
   margin-top: 1.1%;
   margin-bottom: 9.8%;
 }
+.club__block {
+  width: 484px;
+  margin: auto;
+}
 .club__input {
   background: var(--Light-Grey, #F9F9F9);
   border: none;
   outline: none;
-  width: 58%;
+  width: 322px;
   height: 56px;
-  padding-left: 4.3%;
-  margin-left: 5%;
+  padding-left: 32px;
 }
 .club__input::-moz-placeholder {
   color: var(--Dark-Primary, #2A254B);
@@ -258,7 +262,7 @@
   line-height: 150%;
   background: var(--Dark-Primary, #2A254B);
   border: none;
-  width: 20.8%;
+  width: 118px;
   height: 56px;
   margin-left: -0.5%;
   cursor: pointer;
@@ -374,6 +378,35 @@
     margin: 0;
     margin: auto;
   }
+  .club {
+    margin-top: 15%;
+  }
+  .club__wrapper {
+    width: 93%;
+    margin: 0;
+    margin-left: 6.2%;
+  }
+  .club__title {
+    text-align: left;
+    width: 95%;
+    font-size: 28px;
+  }
+  .club__text {
+    width: 86%;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 13.3%;
+  }
+  .club__block {
+    width: 100%;
+    margin: 0;
+  }
+  .club__input {
+    width: 53%;
+  }
+  .club__button {
+    width: 118px;
+  }
 }
 @media (max-width: 481px) {
   .header {
@@ -418,5 +451,11 @@
   }
   .ceramics__title {
     font-size: 20px;
+  }
+  .club__title {
+    font-size: 20px;
+  }
+  .club__text {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=index.css.map */
