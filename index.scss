@@ -294,7 +294,6 @@
 
 .studio {
     display: flex;
-    margin-bottom: 10%;
 
     &__wrapper {
         margin: 5% 0 0 5.84%;
@@ -338,6 +337,38 @@
         width: 150px;
         height: 56px;
         margin-top: 30.8%;
+    }
+}
+
+.footer {
+    background: var(--Dark-Primary, #2A254B);
+
+    &__text {
+        color: var(--White, #FFF);
+        text-decoration: none;
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        width: 88.6%;
+        margin: auto;
+        padding: 24px 0 25px 0;
+        border-top: #4E4D93 1px solid;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 24px;
     }
 }
 
