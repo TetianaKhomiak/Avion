@@ -219,7 +219,7 @@
 }
 
 .club {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 
     &__wrapper {
         display: flex;
@@ -286,6 +286,55 @@
         height: 56px;
         margin-left: -0.5%;
         cursor: pointer;
+    }
+}
+
+.studio {
+    display: flex;
+    margin-bottom: 10%;
+
+    &__wrapper {
+        margin: 5% 0 0 5.84%;
+    }
+
+    &__title {
+        color: #2A254B;
+        font-family: Clash Display;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 140%;
+        width: 75%;
+    }
+
+    &__text {
+        color: #505977;
+        font-family: Satoshi;
+        font-size: 16px;
+        font-weight: 400;
+        width: 75%;
+        margin-top: 5%;
+    }
+
+    &__icon {
+        width: 50%;
+    }
+
+    &__icon-mobile {
+        display: none;
+    }
+
+    &__button {
+        background: var(--Light-Grey, #F9F9F9);
+        border: none;
+        cursor: pointer;
+        color: #2A254B;
+        font-family: Satoshi;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        width: 150px;
+        height: 56px;
+        margin-top: 30.8%;
     }
 }
 
@@ -443,37 +492,69 @@
 
     .club {
         margin-top: 15%;
-    
+
         &__wrapper {
             width: 93%;
             margin: 0;
             margin-left: 6.2%;
         }
-    
+
         &__title {
             text-align: left;
             width: 95%;
             font-size: 28px;
         }
-    
+
         &__text {
             width: 86%;
             margin: 0;
             text-align: left;
             margin-bottom: 13.3%;
         }
-    
+
         &__block {
             width: 100%;
             margin: 0;
         }
-    
+
         &__input {
             width: 53%;
         }
-    
+
         &__button {
             width: 118px;
+        }
+    }
+
+    .studio {
+        display: flex;
+        flex-direction: column;
+
+        &__wrapper {
+            margin: 5% 0 0 5.84%;
+        }
+
+        &__title {
+            width: 85%;
+        }
+
+        &__text {
+            width: 86%;
+            margin-top: 5%;
+        }
+
+        &__button {
+            width: 93%;
+            margin: 17.4% 0 10.35% 0;
+        }
+
+        &__icon-mobile {
+            display: block;
+            width: 100%;
+        }
+
+        &__icon {
+           display: none; 
         }
     }
 }
@@ -545,11 +626,22 @@
     }
 
     .club {
-        
+
         &__title {
             font-size: 20px;
         }
-    
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+    .studio {
+        &__title {
+            width: 70%;
+            font-size: 20px;
+        }
+
         &__text {
             font-size: 14px;
         }

@@ -195,7 +195,7 @@
 }
 
 .club {
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 .club__wrapper {
   display: flex;
@@ -266,6 +266,49 @@
   height: 56px;
   margin-left: -0.5%;
   cursor: pointer;
+}
+
+.studio {
+  display: flex;
+  margin-bottom: 10%;
+}
+.studio__wrapper {
+  margin: 5% 0 0 5.84%;
+}
+.studio__title {
+  color: #2A254B;
+  font-family: Clash Display;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  width: 75%;
+}
+.studio__text {
+  color: #505977;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  width: 75%;
+  margin-top: 5%;
+}
+.studio__icon {
+  width: 50%;
+}
+.studio__icon-mobile {
+  display: none;
+}
+.studio__button {
+  background: var(--Light-Grey, #F9F9F9);
+  border: none;
+  cursor: pointer;
+  color: #2A254B;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 150px;
+  height: 56px;
+  margin-top: 30.8%;
 }
 
 @media (max-width: 1280px) {
@@ -407,6 +450,31 @@
   .club__button {
     width: 118px;
   }
+  .studio {
+    display: flex;
+    flex-direction: column;
+  }
+  .studio__wrapper {
+    margin: 5% 0 0 5.84%;
+  }
+  .studio__title {
+    width: 85%;
+  }
+  .studio__text {
+    width: 86%;
+    margin-top: 5%;
+  }
+  .studio__button {
+    width: 93%;
+    margin: 17.4% 0 10.35% 0;
+  }
+  .studio__icon-mobile {
+    display: block;
+    width: 100%;
+  }
+  .studio__icon {
+    display: none;
+  }
 }
 @media (max-width: 481px) {
   .header {
@@ -456,6 +524,13 @@
     font-size: 20px;
   }
   .club__text {
+    font-size: 14px;
+  }
+  .studio__title {
+    width: 70%;
+    font-size: 20px;
+  }
+  .studio__text {
     font-size: 14px;
   }
 }/*# sourceMappingURL=index.css.map */
