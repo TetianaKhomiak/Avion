@@ -385,7 +385,7 @@
     }
 
     &__mailing {
-       width: 55%;
+        width: 55%;
     }
 
     &__input {
@@ -471,6 +471,34 @@
             width: 140px;
             height: 45px;
         }
+    }
+
+    .footer {
+
+        &__wrapper {
+            flex-wrap: wrap;
+            gap: 5%;
+        }
+
+        &__block {
+            width: 47%;
+            padding-top: 5%;
+        }
+
+        &__mailing {
+            padding-top: 5%;
+            width: 80%;
+        }
+
+        &__input {
+            width: 60%;
+        }
+        
+        &__button {
+            width: 20%;
+        }
+
+
     }
 }
 
@@ -649,8 +677,20 @@
             display: none;
         }
     }
-}
 
+    .footer {
+        &__text {
+            &_bottom {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        &__icons {
+            display: none;
+        }
+    }
+}
 
 @media (max-width:481px) {
     .header {
@@ -736,6 +776,25 @@
 
         &__text {
             font-size: 14px;
+        }
+    }
+
+    .footer {
+        &__block {
+            padding-top: 11.55%;
+        }
+
+        &__mailing {
+            width: 100%;
+            padding-top: 11.55%;
+        }
+
+        &__input {
+            width: 59.4%;
+        }
+
+        &__button {
+            width: 34.1%;
         }
     }
 }
