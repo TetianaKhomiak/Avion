@@ -63,7 +63,7 @@
   width: 50%;
 }
 .chair__desc {
-  margin: 6.13% 0 0 5.05%;
+  margin: 3% 0 0 5.05%;
 }
 .chair__title {
   color: #2A254B;
@@ -92,6 +92,31 @@
 }
 .chair__text_padding {
   padding: 1.85% 0 3.7% 0;
+}
+.chair__text_margin {
+  margin-top: 1.85%;
+}
+.chair__text_number {
+  background: var(--White, #FFF);
+  padding-top: 0;
+  margin-top: 1.85%;
+  width: 18.8%;
+  height: 7.4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chair__text_number::before {
+  content: url(IMG/product-minus.svg);
+  margin-right: 25%;
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+.chair__text_number::after {
+  content: url(IMG/product-plus.svg);
+  margin-left: 25%;
+  margin-bottom: 3%;
+  cursor: pointer;
 }
 .chair__grid {
   width: 49.8%;
@@ -161,7 +186,35 @@
   align-self: end;
   justify-self: end;
 }
+.chair__button {
+  color: #726E8D;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--White, #FFF);
+  line-height: 150%;
+  background: var(--Dark-Primary, #2A254B);
+  border: none;
+  cursor: pointer;
+  margin: 7.37% 2.45% 0 0;
+  width: 143px;
+  height: 9.03%;
+}
+.chair__button_white {
+  color: #2A254B;
+  background: var(--White, #FFF);
+  width: 178px;
+}
 
+@media (max-width: 1155px) {
+  .chair__desc {
+    margin-top: 1.2%;
+    width: 100%;
+  }
+  .chair__text_adaptive {
+    width: 100%;
+  }
+}
 @media (max-width: 1040px) {
   .header__icons {
     width: 40%;
