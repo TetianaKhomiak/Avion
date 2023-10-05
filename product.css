@@ -12,7 +12,7 @@
 }
 
 .header {
-  width: 90%;
+  width: 92%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -22,6 +22,13 @@
   width: 7%;
   display: flex;
   gap: 17%;
+  align-items: center;
+}
+.header__logo {
+  color: #22202E;
+  font-family: Clash Display;
+  font-size: 24px;
+  font-weight: 400;
 }
 .header__burger {
   display: none;
@@ -40,4 +47,35 @@
   font-family: Satoshi;
   font-size: 16px;
   font-weight: 400;
+}
+
+.chair {
+  background: var(--Light-Grey, #F9F9F9);
+  width: 100%;
+}
+.chair__wrapper {
+  width: 92%;
+  margin: auto;
+  display: flex;
+  padding: 3.47% 0 3.27% 0;
+}
+.chair__icon {
+  width: 50%;
+}
+.chair__desc {
+  margin-left: 5.17%;
+}
+
+@media (max-width: 1040px) {
+  .header__icons {
+    width: 40%;
+    gap: 14%;
+    justify-content: flex-end;
+  }
+  .header__burger {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
 }/*# sourceMappingURL=product.css.map */
