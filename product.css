@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Clash Display;
+  src: url(Fonts/ClashDisplay-Regular.otf);
+}
+@font-face {
+  font-family: Satoshi;
+  src: url(Fonts/Satoshi-Regular.otf);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+.header__icons {
+  width: 7%;
+  display: flex;
+  gap: 17%;
+}
+.header__burger {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  width: 75%;
+}
+.nav__link {
+  text-decoration: none;
+  border: none;
+  color: #726E8D;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+}/*# sourceMappingURL=product.css.map */

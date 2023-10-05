@@ -124,8 +124,8 @@
                     Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more
                 </p>
                 <div class="club__block">
-                    <input class="club__input" type="text" placeholder="your@email.com">
-                    <button class="club__button">Sign up</button>
+                    <input class="club__input" type="email" placeholder="your@email.com" required>
+                    <button class="club__button" type="submit">Sign up</button>
                 </div>
             </div>
         </section>
@@ -179,11 +179,11 @@
                     <a class="footer__text" href="">Privacy</a>
                     <a class="footer__text" href="">Returns policy</a>
                 </div>
-                <div class="footer__mailing">
-                    <p class="footer__text footer__text_mailing">Join our mailing list</p>
-                    <input class="footer__input" type="text" placeholder="your@email.com">
-                    <button class="footer__button">Sign up</button>
-                </div>
+                <form class="footer__mailing">
+                    <label class="footer__text footer__text_label" for="mailing">Join our mailing list</label>
+                    <input class="footer__input" type="email" name="mailing" placeholder="your@email.com" required>
+                    <button class="footer__button" type="submit">Sign up</button>
+                </form>
             </div>
             <div class="footer__bottom">
                 <p class="footer__text footer__text_bottom">Copyright 2022 Avion LTD</p>
@@ -243,9 +243,7 @@
                         </svg>
                     </a>
                 </div>
-
             </div>
-
         </div>
     </footer>
 </body>

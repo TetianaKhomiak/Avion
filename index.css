@@ -270,6 +270,7 @@
   height: 56px;
   margin-left: -0.5%;
   cursor: pointer;
+  vertical-align: -2px;
 }
 
 .studio {
@@ -331,9 +332,10 @@
   font-size: 16px;
   font-weight: 400;
 }
-.footer__text_mailing {
+.footer__text_label {
+  display: block;
   font-size: 16px;
-  margin-bottom: 7.35%;
+  margin-bottom: 2.54%;
 }
 .footer__wrapper {
   width: 88.6%;
@@ -386,6 +388,7 @@
   width: 18.6%;
   height: 56px;
   margin-left: -0.5%;
+  vertical-align: -2px;
 }
 .footer__bottom {
   display: flex;
