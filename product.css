@@ -121,6 +121,13 @@
   margin-bottom: 3%;
   cursor: pointer;
 }
+.chair__text_adaptive {
+  color: #726E8D;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--Dark-Primary, #2A254B);
+}
 .chair__grid {
   width: 49.8%;
   display: grid;
@@ -130,12 +137,12 @@
 }
 .chair__line-1 {
   position: absolute;
-  left: 108px;
+  left: 90px;
   top: 5px;
 }
 .chair__line-2 {
   position: absolute;
-  left: 216px;
+  left: 236px;
   top: 5px;
 }
 .chair__features {
@@ -234,10 +241,12 @@
     width: 100%;
     flex-direction: column;
     padding: 0;
+    padding-bottom: 7.7%;
   }
   .chair__desc {
     margin: 0;
-    width: 87.5%;
+    padding-top: 7.2%;
+    width: 87.6%;
     margin: auto;
   }
   .chair__icon {
@@ -247,10 +256,86 @@
     display: block;
     width: 100%;
   }
-  .chair__text_adaptive {
-    width: 90%;
-  }
   .chair__title {
     width: 90%;
+  }
+  .chair__price {
+    width: 100%;
+    padding: 3.5% 0 4.7% 0;
+    margin-bottom: 4.4%;
+  }
+  .chair__text_adaptive {
+    width: 100%;
+  }
+  .chair__text_padding {
+    width: 100%;
+    padding: 8.21% 0 4.1% 0;
+    border-bottom: #EBE8F4 1px solid;
+  }
+  .chair__text_margin {
+    margin-top: 0.5%;
+  }
+  .chair__grid {
+    margin-top: 4.1%;
+  }
+  .chair__button {
+    width: 40%;
+    height: 56px;
+  }
+  .chair__button_white {
+    width: 40%;
+    height: 56px;
+  }
+}
+@media (max-width: 481px) {
+  .chair__desc {
+    display: flex;
+    flex-direction: column;
+  }
+  .chair__text_number {
+    margin-top: 2.35%;
+    width: 100%;
+    height: 46px;
+  }
+  .chair__text_number::before {
+    margin-right: 42%;
+    margin-bottom: 10px;
+  }
+  .chair__text_number::after {
+    margin-left: 42%;
+    margin-bottom: 4px;
+  }
+  .chair__button {
+    margin-top: 4.1%;
+    width: 100%;
+    height: 56px;
+    order: 2;
+  }
+  .chair__button_white {
+    display: block;
+    width: 100%;
+    height: 56px;
+    order: 1;
+    margin-top: 9.35%;
+  }
+}
+@media (max-width: 391px) {
+  .chair__features_item2 {
+    font-size: 14px;
+  }
+  .chair__features_item4 {
+    font-size: 14px;
+  }
+  .chair__features_item6 {
+    font-size: 14px;
+  }
+  .chair__text_adaptive {
+    font-size: 14px;
+  }
+  .chair__title {
+    font-size: 24px;
+  }
+  .chair__price {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=product.css.map */
