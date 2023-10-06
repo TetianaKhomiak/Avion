@@ -325,6 +325,9 @@
 .club__icon {
   width: 50%;
 }
+.club__icon-mobile {
+  display: none;
+}
 .club__wrapper {
   display: flex;
   flex-direction: column;
@@ -599,6 +602,40 @@
   }
   .collection__button {
     margin-left: 40%;
+  }
+}
+@media (max-width: 769px) {
+  .club {
+    flex-direction: column;
+  }
+  .club__icon {
+    display: none;
+  }
+  .club__icon-mobile {
+    display: block;
+    width: 100%;
+  }
+  .club__wrapper {
+    width: 90%;
+    margin: auto;
+    gap: 16px;
+    margin-top: 9.3%;
+  }
+  .club__title {
+    font-size: 20px;
+  }
+  .club__text {
+    font-size: 14px;
+    width: 95%;
+  }
+  .club__block {
+    margin: 16% 0 13.1% 0;
+  }
+  .club__input {
+    width: 54.65%;
+  }
+  .club__button {
+    width: 33.6%;
   }
 }
 @media (max-width: 481px) {
