@@ -357,6 +357,7 @@
     &__text {
         @include font-text;
         text-decoration: none;
+        color: var(--White, #FFF);
 
         &_title {
             color: var(--White, #FFF);
@@ -370,6 +371,12 @@
             font-size: 16px;
             margin-bottom: 2.54%;
         }
+
+        &_bottom {
+            color: var(--White, #FFF);
+        }
+
+
     }
 
     &__wrapper {
@@ -402,10 +409,12 @@
         &::placeholder {
             @include font-text;
             font-size: 16px;
+            color: var(--White, #FFF);
         }
     }
 
     &__button {
+        background: var(--White, #FFF);
         cursor: pointer;
         border: none;
         @include font-text;

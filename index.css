@@ -325,6 +325,7 @@
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
+  color: var(--White, #FFF);
 }
 .footer__text_title {
   color: var(--White, #FFF);
@@ -336,6 +337,9 @@
   display: block;
   font-size: 16px;
   margin-bottom: 2.54%;
+}
+.footer__text_bottom {
+  color: var(--White, #FFF);
 }
 .footer__wrapper {
   width: 88.6%;
@@ -367,6 +371,7 @@
   font-size: 14px;
   font-weight: 400;
   font-size: 16px;
+  color: var(--White, #FFF);
 }
 .footer__input::placeholder {
   color: var(--White, #FFF);
@@ -374,8 +379,10 @@
   font-size: 14px;
   font-weight: 400;
   font-size: 16px;
+  color: var(--White, #FFF);
 }
 .footer__button {
+  background: var(--White, #FFF);
   cursor: pointer;
   border: none;
   color: var(--White, #FFF);
