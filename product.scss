@@ -141,7 +141,7 @@
                 margin-left: 25%;
                 margin-bottom: 3%;
                 cursor: pointer;
-            }   
+            }
         }
 
         &_adaptive {
@@ -257,12 +257,16 @@
         justify-content: space-between;
     }
 
+    &__wrapper-mobile {
+        display: none;
+    }
+
     &__block {
         width: 23.05%;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        
+
 
         &_large {
             width: 47.61%;
@@ -272,14 +276,14 @@
     &__text {
         @include font-title;
         font-size: 20px;
-        line-height: 140%; 
+        line-height: 140%;
     }
 
     &__price {
         @include font-text;
         color: var(--Dark-Primary, #2A254B);
         font-size: 18px;
-        line-height: 150%; 
+        line-height: 150%;
         margin-top: -10px;
     }
 
@@ -394,6 +398,52 @@
             }
         }
     }
+
+    .collection {
+        padding: 8% 0 20% 0;
+
+        &__wrapper {
+            display: none;
+        }
+
+        &__wrapper-mobile {
+            width: 100%;
+            display: flex;
+            gap: 4%;
+            margin: 10% 0 10% 0;
+            overflow: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__block-mobile {
+            display: flex;
+            flex-direction: column;
+            width: 55.7%;
+            gap: 20px;
+        }
+
+        &__text-mobile {
+            @include font-title;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%
+        }
+
+        &__price-mobile {
+            margin-top: -10px;
+            @include font-text;
+            color: var(--Dark-Primary, #2A254B);
+            font-size: 18px;
+            line-height: 150%;
+        }
+
+        &__button {
+            margin-left: 40%;
+        }
+    }
 }
 
 @media (max-width: 481px) {
@@ -438,17 +488,29 @@
         }
 
         &__grid {
-            grid-template-columns: repeat(3, 33.3%);            
+            grid-template-columns: repeat(3, 33.3%);
         }
-    
+
         &__line-1 {
-            left:30%;
+            left: 30%;
             top: 5px;
         }
-    
+
         &__line-2 {
             left: 70%;
             top: 5px;
+        }
+    }
+
+    .collection {
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__button {
+            margin-left: 0;
+            width: 100%;
         }
     }
 }
