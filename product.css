@@ -404,6 +404,7 @@
   font-weight: 400;
   text-decoration: none;
   color: var(--White, #FFF);
+  font-size: 14px;
 }
 .footer__text_title {
   color: var(--White, #FFF);
@@ -411,81 +412,45 @@
   font-size: 16px;
   font-weight: 400;
 }
-.footer__text_label {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 2.54%;
-}
-.footer__text_bottom {
+.footer__title {
+  color: #2A254B;
+  font-family: Clash Display;
+  font-weight: 400;
   color: var(--White, #FFF);
+  font-size: 36px;
+  line-height: 140%;
 }
 .footer__wrapper {
   width: 88.6%;
   margin: auto;
   display: flex;
-  gap: 5%;
   padding: 3.5% 0 3% 0;
 }
 .footer__block {
-  width: 13%;
+  width: 21%;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.footer__mailing {
-  width: 55%;
-}
-.footer__input {
-  border: none;
-  outline: none;
-  background: rgba(255, 255, 255, 0.15);
-  padding-left: 5.4%;
-  width: 74.8%;
-  height: 56px;
-}
-.footer__input::-moz-placeholder {
-  color: #726E8D;
-  font-family: Satoshi;
-  font-size: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--White, #FFF);
-}
-.footer__input::placeholder {
-  color: #726E8D;
-  font-family: Satoshi;
-  font-size: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--White, #FFF);
-}
-.footer__button {
-  background: var(--White, #FFF);
-  cursor: pointer;
-  border: none;
-  color: #726E8D;
-  font-family: Satoshi;
-  font-size: 16px;
-  font-weight: 400;
-  color: #2A254B;
-  font-size: 16px;
-  line-height: 150%;
-  width: 18.6%;
-  height: 56px;
-  margin-left: -0.5%;
-  vertical-align: -2px;
-}
-.footer__bottom {
+.footer__block-icons {
+  width: 42%;
   display: flex;
-  justify-content: space-between;
-  width: 88.6%;
-  margin: auto;
-  padding: 24px 0 25px 0;
-  border-top: #4E4D93 1px solid;
+  flex-direction: column;
+  gap: 22px;
 }
 .footer__icons {
   display: flex;
   gap: 24px;
+}
+.footer__bottom {
+  width: 88.6%;
+  margin: auto;
+  padding: 24px 0 25px 0;
+  border-top: #4E4D93 1px solid;
+  color: var(--White, #FFF);
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 @media (max-width: 1155px) {
@@ -610,6 +575,32 @@
   .collection__button {
     margin-left: 40%;
   }
+  .footer__wrapper {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  .footer__block {
+    width: 50%;
+    margin-bottom: 5%;
+  }
+  .footer__block_mobile {
+    display: none;
+  }
+  .footer__block_menu {
+    order: 1;
+  }
+  .footer__block-icons {
+    width: 50%;
+    margin-top: 2%;
+  }
+  .footer__icons {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer__text-bottom {
+    width: 164px;
+    margin: auto;
+  }
 }
 @media (max-width: 769px) {
   .club {
@@ -718,6 +709,13 @@
   .policy__text {
     width: 100%;
   }
+  .footer__block {
+    margin-top: 10%;
+  }
+  .footer__block-icons {
+    width: 35%;
+    margin-top: 15%;
+  }
 }
 @media (max-width: 391px) {
   .chair__features_item2 {
@@ -737,5 +735,8 @@
   }
   .chair__price {
     font-size: 20px;
+  }
+  .footer__block-icons {
+    width: 45%;
   }
 }/*# sourceMappingURL=product.css.map */
