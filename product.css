@@ -215,6 +215,65 @@
   width: 178px;
 }
 
+.collection {
+  width: 92%;
+  margin: auto;
+  padding: 4.5% 0 10% 0;
+}
+.collection__title {
+  color: #2A254B;
+  font-family: Clash Display;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+}
+.collection__wrapper {
+  width: 100%;
+  display: flex;
+  margin: 1.3% 0 2% 0;
+  justify-content: space-between;
+}
+.collection__block {
+  width: 23.05%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.collection__block_large {
+  width: 47.61%;
+}
+.collection__text {
+  color: #2A254B;
+  font-family: Clash Display;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+.collection__price {
+  color: #726E8D;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--Dark-Primary, #2A254B);
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: -10px;
+}
+.collection__button {
+  color: #726E8D;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2A254B;
+  line-height: 150%;
+  border: none;
+  cursor: pointer;
+  background: var(--Light-Grey, #F9F9F9);
+  width: 162px;
+  height: 56px;
+  margin-left: 41.9%;
+}
+
 @media (max-width: 1155px) {
   .chair__desc {
     margin-top: 1.2%;
