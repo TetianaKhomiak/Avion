@@ -266,10 +266,21 @@
     display: block;
     width: 100%;
   }
+  .filters {
+    display: none;
+  }
+  .catalog {
+    gap: 0;
+    justify-content: space-between;
+  }
   .catalog__button {
     width: 98.7%;
     margin: 0;
     margin: auto;
+  }
+  .catalog__block {
+    width: 48%;
+    padding-bottom: 4%;
   }
   .footer__text_bottom {
     width: 100%;

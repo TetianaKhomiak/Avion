@@ -167,8 +167,6 @@
     }
 }
 
-
-
 .footer {
     background: var(--Dark-Primary, #2A254B);
 
@@ -297,8 +295,6 @@
         &__button {
             width: 20%;
         }
-
-
     }
 }
 
@@ -318,11 +314,24 @@
         }
     }
 
+    .filters {
+        display: none;
+    }
+
     .catalog {
+        gap: 0;
+        justify-content: space-between;
         &__button {
             width: 98.7%;
             margin: 0;
             margin: auto;
+
+        }
+
+        &__block {
+            width: 48%;
+            
+            padding-bottom: 4%;
         }
     }
 
