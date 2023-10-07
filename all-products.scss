@@ -90,6 +90,48 @@
     }
 }
 
+.filters {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__right {
+        width: 230px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__select {
+        appearance: none;
+        border: none;
+        padding-right: 25%;
+        outline: none;
+    }
+}
+
+.catalog {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+
+    &__block {
+        width: 23.5%;
+    }
+
+    &__icon {
+        width: 100%;
+    }
+}
+
+
 
 .footer {
     background: var(--Dark-Primary, #2A254B);
@@ -227,14 +269,14 @@
         &__icon {
             display: none;
         }
-    
+
         &__mobile {
             display: block;
-           width: 100%;
+            width: 100%;
         }
     }
 
-    
+
     .footer {
         &__text {
             &_bottom {

@@ -64,6 +64,44 @@
   display: none;
 }
 
+.filters {
+  width: 92%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.filters__left {
+  display: flex;
+  justify-content: space-between;
+}
+.filters__right {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+}
+.filters__select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  padding-right: 25%;
+  outline: none;
+}
+
+.catalog {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.catalog__block {
+  width: 23.5%;
+}
+.catalog__icon {
+  width: 100%;
+}
+
 .footer {
   background: var(--Dark-Primary, #2A254B);
 }
