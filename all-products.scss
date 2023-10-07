@@ -8,10 +8,10 @@
     src: url(Fonts/Satoshi-Regular.otf);
 }
 
-@mixin font-header {
-    color: #2A254B;
+@mixin font-title {
+    color: (--Dark-Primary, #2A254B);
     font-family: Clash Display;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -19,6 +19,13 @@
     color: var(--White, #FFF);
     font-family: Satoshi;
     font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin font-text-black {
+    color: var(--Dark-Primary, #2A254B);
+    font-family: Satoshi;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -121,13 +128,42 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2%;
+    padding: 2.5% 0 2.5% 0;
 
     &__block {
         width: 23.5%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 4%;
     }
 
     &__icon {
         width: 100%;
+    }
+
+    &__text {
+        @include font-title;
+        line-height: 140%;
+    }
+
+    &__price {
+        @include font-text-black;
+        line-height: 150%;
+    }
+
+    &__button {
+        color: #2A254B;
+        font-family: Satoshi;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        border: none;
+        background: var(--Light-Grey, #F9F9F9);
+        cursor: pointer;
+        width: 170px;
+        height: 56px;
+        margin: 2.8% 0 3.75% 43.5%;
     }
 }
 
@@ -230,6 +266,12 @@
         width: 70%;
     }
 
+    .catalog {
+        &__button {
+            width: 140px;
+            height: 45px;
+        }
+    }
 
     .footer {
 
@@ -276,6 +318,13 @@
         }
     }
 
+    .catalog {
+        &__button {
+            width: 98.7%;
+            margin: 0;
+            margin: auto;
+        }
+    }
 
     .footer {
         &__text {
