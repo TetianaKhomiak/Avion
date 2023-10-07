@@ -80,6 +80,17 @@
     }
 }
 
+.background {
+    &__icon {
+        max-width: 100%;
+    }
+
+    &__mobile {
+        display: none;
+    }
+}
+
+
 .footer {
     background: var(--Dark-Primary, #2A254B);
 
@@ -210,6 +221,17 @@
 @media (max-width:769px) {
     .nav {
         display: none;
+    }
+
+    .background {
+        &__icon {
+            display: none;
+        }
+    
+        &__mobile {
+            display: block;
+           width: 100%;
+        }
     }
 
     

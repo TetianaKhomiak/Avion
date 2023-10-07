@@ -57,6 +57,13 @@
   font-weight: 400;
 }
 
+.background__icon {
+  max-width: 100%;
+}
+.background__mobile {
+  display: none;
+}
+
 .footer {
   background: var(--Dark-Primary, #2A254B);
 }
@@ -177,6 +184,13 @@
 @media (max-width: 769px) {
   .nav {
     display: none;
+  }
+  .background__icon {
+    display: none;
+  }
+  .background__mobile {
+    display: block;
+    width: 100%;
   }
   .footer__text_bottom {
     width: 100%;
