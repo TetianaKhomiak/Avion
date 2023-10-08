@@ -58,7 +58,7 @@
 }
 
 .background__icon {
-  max-width: 100%;
+  width: 100%;
 }
 .background__mobile {
   display: none;
