@@ -71,7 +71,7 @@
 }
 
 .nav {
-    padding-top: 2%;
+    padding: 2% 0 2% 0;
     display: flex;
     justify-content: space-between;
     width: 50%;
@@ -99,30 +99,28 @@
 
 .filters {
     width: 95%;
-    
     margin: auto;
     display: flex;
     justify-content: space-between;
     padding-top: 2%;
-    
 
     &__left {
         display: flex;
         justify-content: space-between;
+        gap: 6%;
     }
 
     &__right {
         align-self: flex-end;
+        width: 230px;
     }
 
-
     &__select {
+        @include font-text-black;
+        font-size: 16px;
         border: none;
-        line-height: 1em;
-        padding: 1.5% 3em 0 1em;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
+        padding: 0.1em 2.5em 0 0.2em;
+        appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
         background-image:
@@ -154,13 +152,24 @@
             outline: none;
         }
 
+        &_first {
+            padding-right: 1.8em;
+
+        }
+
         &_date {
             line-height: 2.3em;
-            padding-top: 2%;
         }
+
     }
 
+    &__label {
+        @include font-text-black;
+        font-size: 16px;
+        padding-right: 10%;
+    }
 }
+
 
 .catalog {
     width: 90%;
