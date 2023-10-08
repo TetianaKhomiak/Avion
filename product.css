@@ -420,6 +420,7 @@
   color: var(--White, #FFF);
   font-size: 36px;
   line-height: 140%;
+  text-decoration: none;
 }
 .footer__wrapper {
   width: 88.6%;
