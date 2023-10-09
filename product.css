@@ -11,6 +11,38 @@
   margin: 0;
 }
 
+.banner {
+  width: 100%;
+  background: var(--Dark-Primary, #2A254B);
+  color: var(--White, #FFF);
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 0 9px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner__wrapper {
+  width: 65%;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.banner__icon {
+  padding-right: 8px;
+  vertical-align: -4px;
+}
+
+.banner__btn {
+  border: none;
+  background: var(--Dark-Primary, #2A254B);
+  cursor: pointer;
+  
+}
+
 .header {
   width: 92%;
   margin: auto;
@@ -605,6 +637,16 @@
   }
 }
 @media (max-width: 769px) {
+  .banner {
+    justify-content: flex-start;
+  }
+
+  .banner__wrapper {
+    width: 92%;
+    justify-content: space-between;
+    margin: auto;
+  }
+
   .club {
     flex-direction: column;
   }
